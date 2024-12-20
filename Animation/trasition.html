@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 100px;
+            background-color: brown;
+            opacity: 1;
+            transition: opacity 10s linear, width 5s linear,transform 8s ease-in;
+        }
+    </style>
+</head>
+<!--transform: change the position
+    transition: specify howmuch amount of time required to transform given
+                property from initial value to new value.-->
+<body>
+    <div class="con" onclick="fun()"></div>
+    <script>
+        let conr=document.getElementsByClassName("con")[0]
+        let fun=()=>{
+            conr.style.transform="translate(200px)";
+            conr.style.opacity="0";
+            conr.style.width="500px"
+        }
+    </script>
+</body>
+</html>

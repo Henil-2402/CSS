@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scon{
+            width: 100%;
+            padding: 20px 0px;
+            background-color: aquamarine;
+            position: relative;
+        
+            overflow: hidden;
+        }
+        span{
+            color:brown;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            left: -100%;
+            animation: scr 10s linear infinite alternate;
+        }
+        @keyframes scr{
+            0%{
+                left:-15%;
+            }
+            100%{
+                left:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scon">
+        <span>Text Scroll</span>
+    </div>
+</body>
+</html>

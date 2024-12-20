@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            width: 400px;
+            height: 500px;
+            
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .con img{
+            width: 100%;
+            height: 100%;
+        }
+        .lr{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0px;
+            left:0px;
+            background-color:coral;
+            opacity: 0px;
+            transition: all 5s linear; 
+        }
+        .con:hover .lr{
+            opacity: 0.6;
+        }
+        .con button{
+            width: 20%;
+            position: absolute;
+            bottom: 0px;
+            opacity: 0;
+            transition: all 5s linear;
+            
+        }
+        .con:hover button{
+            bottom: 50%;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="/css1/Javascript/image4.jpg" alt="">
+        <div class="lr"></div>
+        <button>Image</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(rgba(100,67,128,0.6),rgba(200,170,20,0.6)),url("image32.jpg");
+            background-size:cover ;
+        }
+        .form{
+            width: 30%;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .disp{
+            width: 100%;
+            height: 40px;
+        }
+        .disp input{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            background:transparent;
+            border: none;
+            text-align: right;
+            box-sizing: border-box;
+            color: azure;
+        }
+        .pnl{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap:5px;
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="form">
+            <div class="disp">
+                <input type="text"/>
+            </div>
+            <div class="pnl">
+                <button onclick="fun('ac')">AC</button>
+                <button onclick="fun('c')">C</button>
+                <button onclick="fun('*')">*</button>
+                <button onclick="fun('/')">/</button>
+                <button onclick="fun('1')">1</button>
+                <button onclick="fun('2')">2</button>
+                <button onclick="fun('3')">3</button>
+                <button onclick="fun('+')">+</button>
+                <button onclick="fun('4')">4</button>
+                <button onclick="fun('5')">5</button>
+                <button onclick="fun('6')">6</button>
+                <button onclick="fun('-')">-</button>
+                <button onclick="fun('7')">7</button>
+                <button onclick="fun('8')">8</button>
+                <button onclick="fun('9')">9</button>
+                <button onclick="fun('%')">%</button>
+                <button onclick="fun('00')">00</button>
+                <button onclick="fun('0')">0</button>
+                <button onclick="fun('.')">.</button>
+                <button onclick="fun('=')">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

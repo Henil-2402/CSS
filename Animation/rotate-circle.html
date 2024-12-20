@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(red,blue,green);
+        }
+        .y{
+            animation: rt 10s linear infinite;
+        }
+        @keyframes rt{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con" onclick="fun(this)"></div>
+    <script>
+        let fun=(e)=>{
+            if(e.className=="con")
+            {
+                e.className="con y"
+            }
+            else{
+                e.className="con"
+            }
+        }
+    </script>
+</body>
+</html>

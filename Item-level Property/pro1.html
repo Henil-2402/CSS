@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 100%;
+            height: 40vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .con div{
+            height: 50px;
+        }
+        .c1,.c3{
+            background-color: blue;
+            flex-basis: 200px;      /* initial width of flex-items*/
+            flex-grow: 2;           /* additonal space available in flex container will occupy by flex-items.*/
+            flex-shrink: 1; /*by default flex will allow flex-item to shrink.*/
+        }
+        .c2,.c4{
+            background-color: red;
+            flex-basis: 100px;
+            flex-grow: 1;
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+    </div>
+</body>
+</html>
